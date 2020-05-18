@@ -3,14 +3,14 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 var firebaseConfig = {
-    apiKey: "AIzaSyChgGSIyHarCO3jBrHRphgkkFMah9-eBSA",
-    authDomain: "bloguu-88c12.firebaseapp.com",
-    databaseURL: "https://bloguu-88c12.firebaseio.com",
-    projectId: "bloguu-88c12",
-    storageBucket: "bloguu-88c12.appspot.com",
-    messagingSenderId: "1082047858610",
-    appId: "1:1082047858610:web:c47d5757f278e58fbd46ab",
-    measurementId: "G-27VFCNWGDQ"
+    apiKey: process.env.REACT_APP_apiKey,
+    authDomain: process.env.REACT_APP_authDomain,
+    databaseURL: process.env.REACT_APP_databaseURL,
+    projectId: process.env.REACT_APP_projectId,
+    storageBucket: process.env.REACT_APP_storageBucket,
+    messagingSenderId: process.env.REACT_APP_messagingSenderId,
+    appId: process.env.REACT_APP_appId,
+    measurementId: process.env.REACT_APP_measurementId
 };
   // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
